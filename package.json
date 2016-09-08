@@ -1,0 +1,22 @@
+{
+  "name": "reactapp",
+  "version": "15.3.0",
+  "description": "first_react_app",
+  "main": "main.js",
+  "scripts": {
+    "start": "webpack-dev-server --hot"
+  },
+  "author": "praveen",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "webpack": "~1.13.1",
+    "webpack-dev-server": "~1.14.1",
+    "react": "~15.3.0",
+    "react-dom": "~15.3.0"
+  },
+  "devDependencies": {
+    "style-loader": "~0.13.1",
+    "css-loader": "~0.18.0",
+    "react-css-modules": "~3.7.10"
+  }
+}
