@@ -1,6 +1,6 @@
 {
-  "name": "reactapp",
-  "version": "15.3.0",
+  "name": "praveenkumar",
+  "version": "15.3.2",
   "description": "first_react_app",
   "main": "main.js",
   "scripts": {
@@ -9,14 +9,22 @@
   "author": "praveen",
   "license": "BSD-2-Clause",
   "dependencies": {
-    "webpack": "~1.13.1",
+    "webpack": "~1.13.3",
     "webpack-dev-server": "~1.14.1",
-    "react": "~15.3.0",
-    "react-dom": "~15.3.0"
+    "react": "~15.3.2",
+    "react-dom": "~15.3.2",
+    "react-router": "~3.0.0"
   },
   "devDependencies": {
     "style-loader": "~0.13.1",
     "css-loader": "~0.18.0",
     "react-css-modules": "~3.7.10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/praWINK/reactapp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/praWINK/reactapp/issues"
   }
 }

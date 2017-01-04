@@ -14,6 +14,7 @@ class Form_with_child extends React.Component {
 
    updateState(e) {
       this.setState({data: e.target.value});
+      // alert("dfdddddfdfd");
    }
 
    render() {
@@ -31,9 +32,9 @@ class Child extends React.Component {
    render() {
       return (
          <div>
-            <h2>9.Accessing onKeyUp event by Accessing parent property from Child in Form_with_child.jsx file</h2>
+            <h2>9.Accessing onChange event by Accessing parent property from Child in Form_with_child.jsx file</h2>
             <input type = "text" value = {this.props.myDataProp}
-               onKeyUp = {this.props.updateStateProp} />
+               onChange = {this.props.updateStateProp} />
             <h3>{this.props.myDataProp}</h3>
          </div>
       );

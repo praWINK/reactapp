@@ -1,6 +1,3 @@
-
-
-
 import React from 'react';
 import ReactDOM from 'react-dom';
 
@@ -17,7 +14,7 @@ class References extends React.Component {
       this.comeon_friends = this.comeon_friends.bind(this);
       this.clearcomeInput = this.clearcomeInput.bind(this);
       this.updateState = this.updateState.bind(this);
-      this.clearInput = this.clearInput.bind(this);
+      this.showInput = this.showInput.bind(this);
 
    };
 
@@ -37,7 +34,7 @@ class References extends React.Component {
       this.setState({dd: e.target.value});
    }
 
-   clearInput() {
+   showInput() {
       this.setState({data:this.refs.myInput.value});
    }
 
@@ -67,7 +64,7 @@ class References extends React.Component {
             <h2>10.Creating form with by using MULTIPLE EVENTS IN refs_file.jsx </h2>
             <label>Firstname: </label>
             <input type='text' onInput={this.updateState} ref="myInput"></input>
-            <button onClick = {this.clearInput}>CLEAR</button>
+            <button onClick = {this.showInput}>SHOW</button>
             <h4>Firstname:{this.state.data}</h4>
             <br/>
             <br/>

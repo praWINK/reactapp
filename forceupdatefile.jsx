@@ -21,6 +21,7 @@ class Force_update extends Component {
    }
    forceUpdateHandler() {
       this.forceUpdate();
+      // this.render();
    };
 
    apply_external(){
@@ -35,7 +36,8 @@ class Force_update extends Component {
          <div>
             <h2>6.Force update event with findDOMNode concept in forceUpdatefile.jsx</h2>
             <button onClickCapture = {this.forceUpdateHandler}>FORCE UPDATE</button>
-            <h4 >Random number: {Math.random()}</h4>
+            <h4>Random number: {Math.random()}</h4>
+
             <button onClick = {this.apply_external}>FIND DOME NODE</button>
             <h2 id="myelement">FORCE UPDATE CHECKING</h2>
          </div>

@@ -3,7 +3,7 @@ import {Link} from 'react-router';
 
 export class Home extends React.Component {
    render() {
-    console.log(this.props.children,'dddddddddddddddddddddddddddddddddddddddd')
+    // console.log(this.props.children,'dddddddddddddddddddddddddddddddddddddddd')
       return (
          <div>
 

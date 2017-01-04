@@ -18,8 +18,10 @@ class Header extends React.Component {
       return index + 1;
     }
     var myArray = this.state.data;
-
-    myArray.push(item(this.a))
+    console.log(myArray,"firsttttttttttttttttt")
+    var b = myArray.push(item(this.a))
+    console.log(b);
+    console.log(myArray,"seconddddddddddddddddddddddddddddd")
     this.setState({data: myArray})
     this.a += 1;
 
@@ -42,6 +44,6 @@ Header.defaultProps = {
   headerProp :"Header from anotherfile(achieving external css with using defaultProps)...",
   contentProp :"Content from anotherfile(using defaultProps)..."
 }
+// export default Header;
 export default CSSModules(Header, styles);
 
-// export default Header;

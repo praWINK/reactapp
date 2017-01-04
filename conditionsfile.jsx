@@ -14,14 +14,24 @@ class Condition extends React.Component {
   render() {
     {//checking expression
     }
-    var i=1;
+    {//empty object
+    }
     var module={}
-    var exports=module.exports={}
+    {
+      //its also empty object
+    }
 
+    var exports=module.exports={}
     module.exports.hello = "Bonjour"
+    {
+      //assiging value to module.exports is hello:"Banjour" in this case exports=module.exports
+    }
     console.log(module.exports)
     console.log(exports)
     exports = null;
+    {
+      // In this case exports value only null not module.exports is null still module.exports value is hello:"Banjour"
+    }
     console.log(module.exports)
     console.log(exports)
 
@@ -41,9 +51,10 @@ class Condition extends React.Component {
 
     {//using if condition
     }
+    var i=1;
     var check;
     if(i==1)
-      check= <p className={styles.second}> if condition is sucessful</p>
+      check= <p className={styles.second}> if condition is successful</p>
     else
       check = <p> condition is false</p>
 
@@ -54,7 +65,7 @@ class Condition extends React.Component {
         {//achieving conditional expression
         }
         <div style={conditional}>{i==1 ? 'ternary operation with inline css':'false'} </div>
-        <g style={mychecking}>achieving inline css</g>
+        <g style={mychecking}>achieving inline css with we defined tag name g </g>
 
 
         {//achieving if condition

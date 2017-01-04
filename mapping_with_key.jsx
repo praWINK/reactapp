@@ -32,8 +32,6 @@ class Mapping extends React.Component {
          <div>
             <h2>15.Import mapping concept from mapping_with_key.jsx file</h2>
             <div>
-               {this.detail.data.map((result) =>
-                  <div key={result.id}>{result.component} G {result.id}</div>)}
 
                {this.detail.data.map((dynamicComponent,i) => <Content
                   key={i} componentData = {dynamicComponent}/>)}

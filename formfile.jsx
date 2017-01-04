@@ -23,7 +23,7 @@ class Form extends React.Component {
       return (
          <div>
             <h2>8.Using onChange event to trigger for every single letter changed in formfile.jsx</h2>
-            <Learning click={this.updateState} content={this.state.data}/>
+            <Learning update={this.updateState} content={this.state.data}/>
 
          </div>
       );
